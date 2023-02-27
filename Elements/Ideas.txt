@@ -1,6 +1,0 @@
-Small Isotope Decay Probability Generator (Small I.D.P. Generator) - 1000w
-Large Isotope Decay Probability Generator (Large I.D.P. Generator) - 2000w
-A machine capable of effecting and manuiplting the half life decay of the binge and long lived radioisotope fuel that runs the generator. 
-At the flip of the switch, the machine is able to manuiplate this decay to generate energy. The inner working of the generator are a complete mystery.
-
-Low Entropy
