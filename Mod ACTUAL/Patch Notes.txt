@@ -1,0 +1,13 @@
+Update v1.4.9 Build 02/06/23 |
+
+Additions:
+N/A
+
+Changes:
+N/A
+
+Localisation:
+Fixed sentence structure with Epinephrine's description
+
+Bug Fixes:
+N/A

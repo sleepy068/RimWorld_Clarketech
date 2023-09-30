@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Matter Energy Conversion Battery (MEC Battery) -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>SLP_MECBattery</defName>
+    <label>matter energy conversion battery</label>
+    <description>Matter Energy Conversion Battery (MEC Battery) is a battery that is able to take any energy input into it and store that energy as anti matter. This allows the battery to have an incredible energy density. This does have drawbacks however as the battery isn’t highly efficient in capturing energy due to the conversion process and despite heavy shielding that helps reduce energy loss and protects the battery, if the battery is destroyed or the internal containment fields are breached, it will result in a very large explosion similar to that of an antigrain warhead. \n\nWhile anti matter technology isn’t new, especially on glitterworlds, manufacturing anti matter usually requires massive facilities. It is a complete mystery how this relatively small battery is able to do so let alone use it as an energy storage medium. \n\nThe battery, while incredibly advanced, will still short circuit if exposed to the weather such as rain or snow.</description>
+    <graphicData>
+      <texPath>Things/Building/Special/WIP</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <pathCost>42</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <size>(2, 2)</size>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+	<tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>5400</storedEnergyMax>
+        <efficiency>0.5</efficiency>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+	  <li Class="CompProperties_Explosive">
+        <wickTicks>360</wickTicks>
+        <explosiveRadius>14.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explodeOnKilled>true</explodeOnKilled>
+        <startWickHitPointsPercent>0.1</startWickHitPointsPercent>
+        <extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
+      </li>
+	  <!--
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(227,233,168,0)</glowColor>
+      </li>
+	  -->
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>Sellable</tradeability>
+    <tradeTags>
+      <li>ExoticBuilding</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- Perfect Mirror Battery -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>SLP_PerfectMirrorBattery</defName>
+    <label>perfect mirror battery</label>
+    <description>Perfect Mirror Battery is a battery that when storing energy, converts the electrical current into electromagnetic radiation and fires it into what is basically a box that is surrounded by perfect mirrors. Any bounce of radiation on a non perfect mirror results in a loss of energy; however this isn’t the case when the mirror has no flaws. This allows the box to capture the radiation permanently and release it only when it is needed. When the energy is needed, the battery converts this radiation back into electrical current so it can be used conventionally. The battery also appears to reclaim any self-discharged current, effectively negating any discharge and allowing it to store power indefinitely. \n\nDespite leaking no energy from the box, the conversion from electrical current into electromagnetic radiation and vice versa does result in some wastage and efficiency loss, albeit small. While perfect mirrors do exist, mainly in glitterworld solar highways, due the fact the speed of light is so fast, miniaturising them to such an extent was always thought to be near impossible. \n\nThe battery, while incredibly advanced, will still short circuit if exposed to the weather such as rain or snow.</description>
+    <graphicData>
+      <texPath>Things/Building/Special/WIP</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1, 2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <pathCost>42</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+	  <li>BuildingsSpecial</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>15</Mass>
+    </statBases>
+    <size>(1, 2)</size>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentSpacer>6</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>1800</storedEnergyMax>
+        <efficiency>0.7</efficiency>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+	  <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-5</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+	  <!--
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(227,233,168,0)</glowColor>
+      </li>
+	  -->
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <tradeability>Sellable</tradeability>
+    <tradeTags>
+      <li>ExoticBuilding</li>
+    </tradeTags>
+  </ThingDef>
+</Defs>
